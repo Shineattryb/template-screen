@@ -1,0 +1,64 @@
+@import '../../styles/mixins.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.config-page--wrapper {
+	/* padding: var(--padding-48); */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 96px;
+	margin-bottom: 160px;
+}
+.serial-number{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:#98A2B3;
+}
+
+
+
+.config-page--wrapper .total-trigger-container, .config-page--wrapper .all-capping-container {
+	display: flex;
+	/* justify-content: center; */
+	justify-content: flex-start;
+	gap: 24px;
+}
+.config-page--wrapper .total-trigger-container .serial-number-container .serial-number, .config-page--wrapper .all-capping-container .serial-number-container .serial-number {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	margin: 37% 0rem;
+  @include flex(row,center,space-between);
+    border: .0625rem solid #98A2B3;
+	
+	background-color: var(--color-white-normal);
+}
+.config-page--wrapper .total-trigger-container .serial-number-container .connection-line, .config-page--wrapper .all-capping-container .serial-number-container .connection-line {
+	width: 50%;
+	height: 100%;
+	/* margin: 1.25rem 0rem; */
+	/* border-right: .0625rem dashed var(--color--white-light); */
+	border-right: .125rem dashed #98A2B3;
+}
+/* css for the button */
+.schedule-broadcast button{
+	width:100%;
+	color:#D0D5DD;
+	height:3rem;
+	border: 1px solid #EAECF0;
+	border-radius: 4px;
+	box-shadow: 0rem .0625rem .125rem 0rem #1018280D;
+	background: #FFFFFF;
+	font-family: 'Inter';
+	/* padding: .75rem, 1.25rem, .75rem, 1.25rem */
+
+
+
+}
+.schedule-broadcast button:not([disabled]){
+	background: #6E40FF;
+	border: 1px solid #6E40FF;
+	color:white;
+	border-radius: 4px;
+
+}
